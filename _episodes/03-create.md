@@ -1,7 +1,7 @@
 ---
 title: "Working With Files and Directories"
-teaching: 15
-exercises: 0
+teaching: 25
+exercises: 10
 questions:
 - "How can I create, copy, and delete files and directories?"
 - "How can I edit files?"
@@ -137,9 +137,9 @@ $ nano draft.txt
 > [Vim](http://www.vim.org/) (both of which are completely unintuitive,
 > even by Unix standards), or a graphical editor such as
 > [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
-> use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in 
-> editor called `notepad` that can be run from the command line in the same 
-> way as `nano` for the purposes of this lesson.  
+> use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
+> editor called `notepad` that can be run from the command line in the same
+> way as `nano` for the purposes of this lesson.
 >
 > No matter what editor you use, you will need to know where it searches
 > for and saves files. If you start it from the shell, it will (probably)
@@ -157,14 +157,14 @@ press Return to accept the suggested default of `draft.txt`).
 
 ![Nano in Action](../fig/nano-screenshot.png)
 
-Once our file is saved, we can use `Ctrl-X` to quit the editor and 
+Once our file is saved, we can use `Ctrl-X` to quit the editor and
 return to the shell.
 
 > ## Control, Ctrl, or ^ Key
 >
 > The Control key is also called the "Ctrl" key. There are various ways
 > in which using the Control key may be described. For example, you may
-> see an instruction to press the Control key and, while holding it down, 
+> see an instruction to press the Control key and, while holding it down,
 > press the X key, described as any of:
 >
 > * `Control-X`
@@ -175,7 +175,7 @@ return to the shell.
 >
 > In nano, along the bottom of the screen you'll see `^G Get Help ^O WriteOut`.
 > This means that you can use `Control-G` to get help and `Control-O` to save your
-> file. 
+> file.
 {: .callout}
 
 `nano` doesn't leave any output on the screen after it exits,
@@ -342,10 +342,10 @@ quotes.txt
 ~~~
 {: .output}
 
-One has to be careful when specifying the target file name, since `mv` will 
-silently overwrite any existing file with the same name, which could 
+One has to be careful when specifying the target file name, since `mv` will
+silently overwrite any existing file with the same name, which could
 lead to data loss. An additional flag, `mv -i` (or `mv --interactive`),
-can be used to make `mv` ask you for confirmation before overwriting. 
+can be used to make `mv` ask you for confirmation before overwriting.
 
 Just for the sake of inconsistency,
 `mv` also works on directories --- there is no separate `mvdir` command.
@@ -425,7 +425,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ## What's In A Name?
 >
 > You may have noticed that all of Nelle's files' names are "something dot
-> something", and in this part of the lesson, we always used the extension 
+> something", and in this part of the lesson, we always used the extension
 > `.txt`.  This is just a convention: we can call a file `mythesis` or
 > almost anything else we want. However, most people use two-part names
 > most of the time to help them (and their programs) tell different kinds
@@ -569,17 +569,17 @@ but it does find the copy in `thesis` that we didn't delete.
 {: .challenge}
 
 > ## Creating Files a Different Way
-> 
+>
 > We have seen how to create text files using the `nano` editor.
 > Now, try the following command in your home directory:
-> 
+>
 > $ cd                  # go to your home directory
 > $ touch my_file.txt
 >
 > 1.  What did the touch command do?
 >     When you look at your home directory using the GUI file explorer,
 >     does the file show up?
-> 
+>
 > 2.  Use `ls -l` to inspect the file's.  How large is `my_file.txt`?
 >
 > 3.  When might you want to create a file this way?
@@ -589,12 +589,12 @@ but it does find the copy in `thesis` that we didn't delete.
 >
 > After running the following commands,
 > Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder:
-> 
+>
 > ~~~
 > $ ls -F
 > raw/ analyzed/
 > $ ls -F analyzed
-> fructose.dat glucose.dat maltose.dat sucrose.dat 
+> fructose.dat glucose.dat maltose.dat sucrose.dat
 > $ cd raw/
 > ~~~
 > {: .bash}
