@@ -8,7 +8,7 @@ More importantly,
 it helps them combine existing programs in new ways
 and automate repetitive tasks
 so they aren't typing the same things over and over again.
-Use of the shell is fundamental to using a wide range of other powerful tools 
+Use of the shell is fundamental to using a wide range of other powerful tools
 and computing resources (including "high-performance computing" supercomputers).
 These lessons will start you on a path towards using these resources effectively.
 
@@ -23,3 +23,5 @@ These lessons will start you on a path towards using these resources effectively
 > searching for files with `grep` and `find`, and writing simple loops
 > and scripts, you probably won't learn much from this lesson.
 {: .prereq}
+
+## [Workshop Slide-deck](extras/workshop_slides.pdf)

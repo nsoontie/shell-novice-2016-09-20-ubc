@@ -5,3 +5,10 @@
 .sass-cache
 __pycache__
 _site
+_extras/workshop_slides.aux
+_extras/workshop_slides.log
+_extras/workshop_slides.nav
+_extras/workshop_slides.out
+_extras/workshop_slides.snm
+_extras/workshop_slides.toc
+_extras/workshop_slides.vrb
