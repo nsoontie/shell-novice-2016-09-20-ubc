@@ -318,8 +318,8 @@ In our current directory, we want to find the 3 files which have the least numbe
 \begin{itemize}
     \item{Write a loop that applies one or more commands separately to each file in a set of files.}
     \item{Trace the values taken on by a loop variable during execution of the loop.}
-    \item{Explain the difference between a variable�s name and its value.}
-    \item{Explain why spaces and some punctuation characters shouldn�t be used in file names.}
+    \item{Explain the difference between a variable's name and its value.}
+    \item{Explain why spaces and some punctuation characters shouldn't be used in file names.}
     \item{Demonstrate how to see what commands have recently been executed.}
     \item{Re-run recently executed commands without retyping them.}
     \end{itemize}
@@ -438,16 +438,16 @@ In the same directory, what is the effect of this loop?
 \begin{frame}{Scripts}
 \begin{enumerate}
    \item{ Write a shell script that runs a command or series of commands for a fixed set of files.}
-   \item{  Run a shell script from the command line.}
+   \item{ Run a shell script from the command line.}
    \item{ Write a shell script that operates on a set of files defined by the user on the command line.}
-   \item{  Create pipelines that include user-written shell scripts.}
+   \item{ Create pipelines that include user-written shell scripts.}
 \end{enumerate}
 \end{frame}
 
 %-------------------------- Challenge 01------------------------------------------%
 
 \begin{frame}{Find the longest file with a given extension}
-Write a shell script called longest.sh that takes the name of a directory and a filename extension as its parameters, and prints out the name of the file with the most lines in that directory with that extension. For example:
+Write a shell script called \texttt{longest.sh} that takes the name of a directory and a filename extension as its parameters, and prints out the name of the file with the most lines in that directory with that extension. For example:
 \vspace{0.5cm}
 
 
@@ -460,25 +460,9 @@ Write a shell script called longest.sh that takes the name of a directory and a 
 would print the name of the .pdb file in \texttt{/tmp/data} that has the most lines.
 \end{frame}
 
+
+
 %-------------------------- Challenge 02------------------------------------------%
-
-\begin{frame}{Why record commands in the history before running them?}
-If you run the command:
-
-\vspace{0.5cm}
-
-
-\begin{beamerboxesrounded}[upper=uppercolgreen,lower=lowercolgreen,shadow=false]{}
-\small{\texttt{\$ history | tail -5 > recent.sh}}
-\end{beamerboxesrounded}
-
-\vspace{0.5cm}
-
-he last command in the file is the \texttt{history} command itself, i.e., the shell has added \texttt{history} to the command log before actually running it. In fact, the shell always adds commands to the log before running them. Why do you think it does this?
-\end{frame}
-
-
-%-------------------------- Challenge 03------------------------------------------%
 
 \begin{frame}{Script reading comprehension}
 
@@ -507,7 +491,7 @@ echo \$*.dat}}
 
 \end{frame}
 
-%-------------------------- Challenge 03 - SOL------------------------------------------%
+%-------------------------- Challenge 02 - SOL------------------------------------------%
 
 \begin{frame}{Script reading comprehension}
 
@@ -528,7 +512,7 @@ Prints
 
 \end{frame}
 
-%-------------------------- Challenge 3 - Sol------------------------------------------%
+%-------------------------- Challenge 2 - Sol------------------------------------------%
 
 \begin{frame}{Script reading comprehension}
 
