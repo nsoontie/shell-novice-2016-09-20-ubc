@@ -117,9 +117,8 @@ You need to download some files to follow this lesson. These files are found on 
 \item /
 \item ls
 \item ls -F
-\item ls -F data
-\item ls -F /data
-\item cd data
+\item ls -F Desktop
+\item cd Desktop
 \item cd ..
 \item ls -F -a
 \item ls north-pacific-gyre/2012-07-03
@@ -162,11 +161,11 @@ If \texttt{pwd} displays \texttt{/users/backup}, and \texttt{-r} tells \texttt{l
 \end{frame}
 
 
-%-------------------------CreatingThings--------------------------------------------%
+%-------------------------Working--------------------------------------------%
 
-\subsection*{Creating Things}
+\subsection*{Working with Files and Directories}
 \begin{frame}
-\frametitle{Creating Things}
+\frametitle{Working with Files and Directories}
 \small{
 \begin{block}{Learning Goals}
 
@@ -249,21 +248,22 @@ $ mv sucrose.dat analyzed/sucrose.dat
 \item    Process a file instead of keyboard input using redirection.
 \item    Construct command pipelines with two or more stages.
 \item    Explain what usually happens if a program or pipeline isn't given any input to process.
-\item    Explain Unix's "small pieces, loosely joined" philosophy.
+\item    Explain Unix's ``small pieces, loosely joined" philosophy.
 \end{enumerate}
 \end{block}
-
+}
+{\footnotesize
 \begin{multicols}{2}
 \begin{itemize}
 \item cd molecules
 \item wc *.pdb
 \item wc -l
-\item wc -l *.pdb $>$ lengths
-\item cat lengths
-\item sort lengths
-\item sort lengths $>$ sorted-lengths
-\item head -1 sorted-lengths
-\item sort lengths $|$ head -1
+\item wc -l *.pdb $>$ lengths.txt
+\item cat lengths.txt
+\item sort lengths.txt
+\item sort lengths.txt $>$ sorted-lengths.txt
+\item head -1 sorted-lengths.txt
+\item sort lengths.txt $|$ head -1
 \item wc -l *.txt
 \item wc -l *.txt $|$ sort $|$ head -5
 \item ls *Z.txt
