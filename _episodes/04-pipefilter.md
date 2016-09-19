@@ -1,6 +1,6 @@
 ---
 title: "Pipes and Filters"
-teaching: 15
+teaching: 25
 exercises: 0
 questions:
 - "How can I combine existing commands to do new things?"
@@ -542,7 +542,7 @@ so this matches all the valid data files she has.
 {: .challenge}
 
 > ## More on Wildcards
-> 
+>
 > Sam has a directory containing calibration data, datasets, and descriptions of
 > the datasets:
 >
@@ -730,8 +730,8 @@ so this matches all the valid data files she has.
 
 > ## Appending Data
 >
-> Consider the file `animals.txt`, used in previous exercise. 
-> After these commands, select the alternative that 
+> Consider the file `animals.txt`, used in previous exercise.
+> After these commands, select the alternative that
 > corresponds the file `animalsUpd.txt`:
 >
 > ~~~
@@ -739,7 +739,7 @@ so this matches all the valid data files she has.
 > $ tail -2 animals.txt >> animalsUpd.txt
 > ~~~
 > {: .bash}
-> 
+>
 > 1. The first three lines of `animals.txt`
 > 2. The last two lines of `animals.txt`
 > 3. The first three lines and the last two lines of `animals.txt`

@@ -1,7 +1,7 @@
 ---
 title: "Loops"
-teaching: 15
-exercises: 0
+teaching: 30
+exercises: 10
 questions:
 - "How can I perform the same actions on many different files?"
 objectives:
@@ -214,9 +214,9 @@ the `head` and `tail` combination selects lines 81-100 from whatever file is bei
 > purple unicorn.dat
 > ~~~
 > {: .source}
-> 
+>
 > We need to use
-> 
+>
 > ~~~
 > for filename in "red dragon.dat" "purple unicorn.dat"
 > do
@@ -500,13 +500,13 @@ so she decides to get some coffee and catch up on her reading.
 > fructose.dat    glucose.dat   sucrose.dat   maltose.txt
 > ~~~
 > {: .output}
-> 
+>
 > What would be the output of the following loop?
 >
 > ~~~
 > for filename in s*
 > do
->     ls $filename 
+>     ls $filename
 > done
 > ~~~
 > {: .bash}
@@ -521,7 +521,7 @@ so she decides to get some coffee and catch up on her reading.
 > ~~~
 > for filename in *s*
 > do
->     ls $filename 
+>     ls $filename
 > done
 > ~~~
 > {: .bash}
@@ -537,7 +537,7 @@ so she decides to get some coffee and catch up on her reading.
 > A loop is a way to do many things at once --- or to make many mistakes at
 > once if it does the wrong thing. One way to check what a loop *would* do
 > is to echo the commands it would run instead of actually running them.
-> 
+>
 > Suppose we want to preview the commands the following loop will execute
 > without actually running those commands:
 >
